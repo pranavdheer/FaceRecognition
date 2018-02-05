@@ -16,3 +16,15 @@ Install openCV
 ```
 Install Dlib
 ```
+## Usage
+
+Ensure that you have downloaded all the files in the same directory 
+then run code.py to see your output on a video.
+
+## Sample output
+![alt text](https://github.com/pranavdheer/FaceRecognition/blob/master/output.jpg)
+![alt text](https://github.com/pranavdheer/FaceRecognition/blob/master/output.jpeg)
+
+
+https://www.youtube.com/watch?v=t_R79cKIV4Y&feature=youtu.be
+
