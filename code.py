@@ -6,7 +6,7 @@ import numpy as np
 detector=dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-recogonizer=cv2.face.createLBPHFaceRecognizer(threshold=95) #for testing on an image make threshold 84
+recogonizer=cv2.face.createLBPHFaceRecognizer(threshold=95) #for testing on an image make threshold 82
 
 def detect(gray): 
  face_store=[]
