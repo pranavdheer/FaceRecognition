@@ -89,6 +89,7 @@ def train():
   recogonizer.train(img_array, test_label_array) 
 train()    
 
+#For testing on a video
 face_store=[]
 cap = cv2.VideoCapture('obama.mp4')
 frame_width = int(cap.get(3))
@@ -129,3 +130,28 @@ while(cap.isOpened()):
 cap.release()
 cv2.destroyAllWindows()
 vid.release()
+
+#uncomment this to test your code on an image
+
+# face_store=[]
+# images=cv2.imread('test.jpg')
+# copy_image=images
+# images=cv2.cvtColor(images,cv2.COLOR_BGR2GRAY)
+# save=[]
+# face_store=detect(images)
+# output=align(face_store)
+
+# if output[0]=='y':
+#     for ix in range (0,len(output[1])):
+#       x,y,w,h=save[ix][0],save[ix][1],save[ix][2],save[ix][3]
+#       cv2.rectangle(copy_image,(x,y),(x+w,y+h), (0, 255, 0), 2)  
+#       out=output[1][ix]
+#       lab= recogonizer.predict(out)  
+#       if lab[0]==1:
+#         cv2.putText(copy_image,'Obama',(x,y), cv2.FONT_HERSHEY_SIMPLEX, 1,(0,255,0),2,cv2.LINE_AA)
+#       else:
+#         cv2.putText(copy_image,'Unknown',(x,y), cv2.FONT_HERSHEY_SIMPLEX, 1,(0,255,0),2,cv2.LINE_AA) 
+# cv2.imwrite('debug.jpg',copy_image)  
+
+
+
